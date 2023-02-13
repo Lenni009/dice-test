@@ -1,2 +1,2 @@
-# laelith-poc-threejs-dice
+# threejs-dice
 Created with CodeSandbox
