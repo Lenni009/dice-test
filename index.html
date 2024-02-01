@@ -3,13 +3,31 @@
   <head>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
+
+	<style>
+		.dice-box {
+			background-image: url('./Dice-box-sample_2_square_fill.png');
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#app {
+			width: 800px;
+			height: 800px;
+			padding: 100px;
+		}
+
+	</style>
     <script type="module" crossorigin src="/dice-test/assets/index-ECdjCu4O.js"></script>
     <link rel="stylesheet" crossorigin href="/dice-test/assets/index-gLas6nNf.css">
   </head>
 
   <body>
     <button id="rollBtn">Roll Again</button>
-    <div id="app"></div>
+	<div class="dice-box">
+		<div id="app"></div>
+	</div>
 
   </body>
 </html>
