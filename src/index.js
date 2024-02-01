@@ -19,7 +19,7 @@ const Box = new DiceBox("#app", {
   },
   light_intensity: 1,
   gravity_multiplier: 600,
-  baseScale: 100,
+  baseScale: 150,
   strength: 2,
   onRollComplete: (results) => {
     console.log(`I've got results :>> `, results);
