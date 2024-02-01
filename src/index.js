@@ -30,8 +30,7 @@ Box.initialize()
   .then(() => {
     // give code sandbox a chance to load up
     setTimeout(() => {
-      Box.roll("7d6@4,4,4,4,4,4,4");
-      // Box.roll("1d2+1d4+1d6+1d8+1d10+1d12+1d20+1d100");
+      Box.roll(`1d20@${getRndInteger(1, 20)}`);
     }, 1000);
   })
   .catch((e) => console.error(e));
