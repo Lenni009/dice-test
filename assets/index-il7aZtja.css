@@ -1,0 +1,1 @@
+body{font-family:sans-serif}#rollBtn{position:relative;cursor:pointer;z-index:2}.dice-box{background-image:url(./Dice-box-sample_2_square_fill.png);display:flex;justify-content:center;align-items:center;border:2px solid red;width:800px;height:800px;background-size:cover}#app{padding:100px}
