@@ -1,6 +1,8 @@
 import "./styles.css";
 import DiceBox from "@3d-dice/dice-box-threejs";
 
+let result = 1;
+
 // set configurations when invoking the class
 const Box = new DiceBox("#app", {
   theme_customColorset: {
@@ -59,6 +61,7 @@ rollBtn.addEventListener("click", () => {
   );
 });
 
-function getRndInteger(min, max) {
-	return Math.floor(Math.random() * (max - min + 1) ) + min;
+function getRndInteger() {
+	if (result === 20) result = 1;
+	return result++;
 } 
