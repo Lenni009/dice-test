@@ -1,6 +1,7 @@
 import "./styles.css";
 
-import THREE, { OrbitControls } from "./three";
+import * as THREE from 'three'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import CANNON from "cannon";
 import { DiceManager, DiceD20 } from "threejs-dice/lib/dice";
 import Stats from "stats.js";
@@ -20,7 +21,10 @@ init();
 // FUNCTIONS
 function init() {
 	// SCENE
+	console.log("hi")
+	console.log(THREE)
 	scene = new THREE.Scene();
+	console.log("still working")
 	// CAMERA
 	var SCREEN_WIDTH = window.innerWidth,
 		SCREEN_HEIGHT = window.innerHeight;
