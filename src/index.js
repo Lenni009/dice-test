@@ -62,6 +62,6 @@ rollBtn.addEventListener("click", () => {
 });
 
 function getRndInteger() {
-	if (result === 20) result = 1;
+	if (result === 21) result = 1;
 	return result++;
 } 
