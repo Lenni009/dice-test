@@ -10,10 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "cannon": "0.6.2",
-    "stats.js": "0.17.0",
-    "three": "0.161.0",
-    "threejs-dice": "1.1.0"
+    "@3d-dice/dice-box-threejs": "0.0.6"
   },
   "devDependencies": {
     "vite": "^5.0.12"
