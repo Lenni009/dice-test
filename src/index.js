@@ -2,7 +2,7 @@ import "./styles.css";
 
 import THREE, { OrbitControls } from "./three";
 import CANNON from "cannon";
-import { DiceManager, DiceD20, DiceD8 } from "threejs-dice/lib/dice";
+import { DiceManager, DiceD20 } from "threejs-dice/lib/dice";
 import Stats from "stats.js";
 
 // standard global variables

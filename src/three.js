@@ -1,7 +1,8 @@
 import * as THREE from "three";
 window.THREE = THREE;
-import "three/examples/js/controls/OrbitControls.js";
+import 'three/examples/js/controls/OrbitControls';
 
-let OrbitControls = THREE.OrbitControls;
+const OrbitControls = THREE.OrbitControls;
+
 export default THREE;
 export { OrbitControls };
