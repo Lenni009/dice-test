@@ -50,8 +50,7 @@ rollBtn.addEventListener("click", () => {
   const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
   // all dice will produce the same value picked from the values list randomly
-  const values = [1, 2, 3, 4, 5, 6];
-  const randomVal = values[Math.floor(Math.random() * values.length)];
+  const randomVal = getRndInteger(1, 20);
 
   Box.updateConfig({
     theme_customColorset: {
@@ -62,6 +61,10 @@ rollBtn.addEventListener("click", () => {
     }
   });
   Box.roll(
-    `7d6@${randomVal},${randomVal},${randomVal},${randomVal},${randomVal},${randomVal},${randomVal}`
+    `1d20@${randomVal}`
   );
 });
+
+function getRndInteger(min, max) {
+	return Math.floor(Math.random() * (max - min + 1) ) + min;
+} 
