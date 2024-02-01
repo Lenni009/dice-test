@@ -135,25 +135,15 @@ function init() {
 	world.add(wallBBody);
 	// Dices
 
-	for (var i = 0; i < 5; i++) {
-		var die;
-		if (i % 2 === 0) {
-			die = new DiceD20({
+		const die = new DiceD20({
 				size: 1.5,
 				backColor: "#000",
 				fontColor: "#ffd582"
 			});
-		} else {
-			die = new DiceD8({
-				size: 1.5,
-				backColor: "#000",
-				fontColor: "#ffd582"
-			});
-		}
-
+		
 		scene.add(die.getObject());
 		dice.push(die);
-	}
+	
 
 	function randomDiceThrow() {
 		var diceValues = [];
