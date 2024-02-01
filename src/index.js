@@ -18,7 +18,7 @@ const Box = new DiceBox("#app", {
     material: "metal" // metal | glass | plastic | wood
   },
   light_intensity: 1,
-  gravity_multiplier: 600,
+  gravity_multiplier: 500,
   baseScale: 150,
   strength: 2,
   onRollComplete: (results) => {
