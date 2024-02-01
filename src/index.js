@@ -40,13 +40,8 @@ const rollBtn = document.getElementById("rollBtn");
 rollBtn.addEventListener("click", () => {
   // dynamically update the dice theme on each roll
   const colors = [
-    "#00ffcb",
-    "#ff6600",
-    "#1d66af",
-    "#7028ed",
-    "#c4c427",
-    "#d81128"
-  ];
+	'#55d12f',
+];
   const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
   // all dice will produce the same value picked from the values list randomly
@@ -57,7 +52,7 @@ rollBtn.addEventListener("click", () => {
       background: randomColor,
       foreground: "#ffffff",
       texture: "marble", // marble | ice
-      material: "metal" // metal | glass | plastic | wood
+      material: "plastic" // metal | glass | plastic | wood
     }
   });
   Box.roll(
