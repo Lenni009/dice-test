@@ -2,17 +2,23 @@ body {
   font-family: sans-serif;
 }
 
-#app {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-}
-
 #rollBtn {
   position: relative;
   cursor: pointer;
   z-index: 2;
+}
+
+.dice-box {
+  background-image: url('./Dice-box-sample_2_square_fill.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  width: 800px;
+  height: 800px;
+  background-size: cover;
+}
+
+#app {
+  padding: 100px;
 }
